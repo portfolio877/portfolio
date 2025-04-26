@@ -12,11 +12,19 @@
   <!-- HEADER -->
   <header>
     <div class="container">
-    <div style="display: flex; align-items: center; justify-content: flex-start;">
-      <img src="logo.jpeg" alt="ZererorrWS Logo" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
-      <h1>ZereroRR Web Solutions</h1>
-    </div>
-      <nav>
+      <div style="display: flex; align-items: center; justify-content: flex-start;">
+        <img src="logo.jpeg" alt="ZererorrWS Logo" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
+        <h1>ZereroRR Web Solutions</h1>
+      </div>
+  
+      <!-- HAMBURGER ICON -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <nav id="nav">
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -26,6 +34,7 @@
       </nav>
     </div>
   </header>
+  
 <!-- WELCOME SECTION -->
 <section class="welcome">
   <div class="container">
@@ -116,6 +125,14 @@
         }
       });
     });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+  });
   </script>
 
 </body>
