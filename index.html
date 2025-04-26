@@ -133,6 +133,16 @@
     nav.classList.toggle('active');
     menuToggle.classList.toggle('active');
   });
+
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  // Close the menu when any nav link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
   </script>
 
 </body>
