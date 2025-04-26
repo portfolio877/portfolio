@@ -1,0 +1,215 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #A0A0FF; /* light feminine pink */
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+/* Header */
+/* Header */
+header {
+  background: #fff;
+  padding: 5px 0; /* Reduced padding */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center; /* Align vertically in the center */
+  justify-content: space-between; /* Space out the items */
+}
+
+header .container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Ensure space between the logo, text, and nav */
+  width: 100%;
+}
+
+header img {
+  width: 80px; /* Adjust size of the logo */
+  height: 80px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #1E1E2E;
+  margin-left: 10px; /* Adjust spacing between logo and text */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 20px; /* Adjust spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1E1E2E;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1E1E2E;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1E1E2E;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1E1E2E;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+  text-align: center;
+  background: #A0A0FF;
+}
+
+.light-section {
+  background: #ffffff;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #1E1E2E;
+  margin-bottom: 20px;
+}
+
+.section p, .section ul {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  margin: 10px 0;
+}
+
+/* Project Cards */
+.project {
+  background: #A0A0FF;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  color: #1E1E2E;
+}
+
+.project p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #1E1E2E;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1E1E2E;
+}
+
+/* Contact List */
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: #A0A0FF;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Animation */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+/* WELCOME SECTION */
+.welcome {
+  background: #ffffff; /* White background */
+  padding: 80px 0;
+}
+
+.welcome .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap; /* For mobile responsiveness */
+}
+
+.welcome-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.welcome-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1E1E2E;
+}
+
+.welcome-text p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 500px;
+}
